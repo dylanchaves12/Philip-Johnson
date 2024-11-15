@@ -1,0 +1,225 @@
+body {
+    font-family: 'Tahoma', sans-serif; 
+    /* Este atributo le da una tipografía a la página */
+    margin: 0; 
+    /* Elimina los márgenes */
+    padding: 0; 
+    /* Elimina el relleno interno el espacio entre el borde y el contenido del contenedor */
+    background-color: #121212; 
+    /* Cambia el color de fondo a gris */
+    color: #f5f5f5; 
+    /* Establece un color blanco para el texto */
+}
+
+header {
+    background-color: #161617; 
+    /* Fondo de color azul oscuro */
+    color: #f5f5f5; 
+    /* Texto en blanco */
+    padding: 30px 20px; 
+    /* Espacio de 30px arriba y abajo, 20px a los lados */
+    text-align: center; 
+    /* Centra el texto dentro del header */
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5); 
+    /* Sombra */
+}
+
+h1 {
+    font-size: 46px; 
+    /* Tamaño del texto para el h1 en píxeles */
+    font-weight: 700; 
+    /* Grosor de la letra */
+    letter-spacing: 1px; 
+    /* Espacio entre caracteres */
+    margin: 0; 
+    /* Elimina cualquier margen alrededor del título */
+    text-transform: uppercase; 
+    /* Convierte todo el texto a mayusculas */
+}
+
+header p {
+    margin-top: 5px; 
+    /* Margen superior en 5 pixeles */
+    font-size: 15px; 
+    /* Tamaño del texto del parrafo */
+    font-style: italic; 
+    /* Pone el texto en cursiva */
+}
+
+nav ul {
+    text-align: center; 
+    /* Centra los elementos */
+    font-weight: bold; 
+    /* Pone los enlaces en negrita */
+    font-size: 16px; 
+    /* Tamaño de los textos */
+    list-style-type: none; 
+    /* Elimina los puntos de la lista */
+    padding: 0; 
+    /* Quita el relleno de la lista */
+    margin: 20px 0; 
+    /* Margen de 20px arriba y abajo */
+}
+
+nav ul li {
+    display: inline-block; 
+    /* Los elementos de la lista se muestran en línea */
+    margin: 0 20px; 
+    /* Espacio horizontal entre los ítems */
+}
+
+nav ul li a {
+    color: #f5f5f5; 
+    /* Los enlaces se muestran en blanco */
+    text-decoration: none; 
+    /* Elimina el subrayado de los enlaces */
+    text-transform: uppercase; 
+    /* Los enlaces también se ponen en mayusculas */
+    transition: color 0.3s ease, transform 0.3s ease; 
+    /* tiempo se transicion */
+}
+
+nav ul li a:hover {
+    color: #0b5372; 
+    /* Al pasar el mouse, el color de los enlaces cambia */
+    transform: scale(1.05); 
+    /* Efecto de agrandamiento de los enlaces al pasar el mouse */
+}
+
+main {
+    padding: 30px 20px; 
+    /* 30px arriba y abajo, 20px a los lados, dentro del contenido */
+    background-color: #1e1e1e; 
+    /* Fondo oscuro para las secciones principales */
+    margin-top: 40px; 
+    /* Da espacio encima del main para separarlo del header */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4); 
+    /* Sombra más pronunciada para darle profundidad */
+    border-radius: 5px; 
+    /* Bordes redondeados */
+}
+
+section {
+    margin-bottom: 30px; 
+    /* Margen de 30px abajo para separar las secciones entre si */
+    padding: 25px; 
+    /* Da 25px de espacio interior */
+    background-color: #2a2a2a; 
+    /* Fondo más oscuro para las secciones individuales */
+    border: 2px solid #444; 
+    /* Borde suave */
+    border-radius: 1px; 
+    /* Bordes redondeados */
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4); 
+    /* Sombra más pronunciada */
+}
+
+section h2 {
+    font-size: 34px; 
+    /* Tamaño del texto del h2 */
+    font-weight: 600; 
+    /* Grosor del texto */
+    color: #f5f5f5; 
+    /* Títulos en blanco */
+    margin-bottom: 15px; 
+    /* Margen de 15px abajo para separar los títulos del contenido */
+}
+
+footer {
+    text-align: center; 
+    /* Justificacion del texto */
+    padding: 30px 20px; 
+    background-color: #161617; 
+    /* Fondo de color azul oscuro para el footer */
+    color: #f5f5f5; 
+    /* Color del texto en blanco */
+    font-size: 16px; 
+    /* Tamaño del texto */
+    margin-top: 40px; 
+    /* Espacio superior */
+    box-shadow: 0 -4px 25px rgba(0, 0, 0, 0.5); 
+    /* Sombra más pronunciada */
+}
+
+.columnas {
+    display: flex; 
+    /* Atributo para cambio de posición del contenido respecto al dispositivo */
+    justify-content: space-around; 
+    /* Espaciado igual entre las columnas */
+    gap: 25px; 
+    /* Espacio de 25px entre las columnas */
+    margin-top: 40px; 
+    /* Espacio superior en 40px */
+}
+
+.columna {
+    flex: 1; 
+    /* Cada columna toma el mismo tamaño */
+    padding: 25px; 
+    /* Espacio interno dentro de cada columna */
+    background-color: #333; 
+    /* Fondo gris oscuro dentro de las columnas */
+    border-radius: 10px; 
+    /* Bordes redondeados */
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4); 
+    /* Sombra mas pronunciada para darle más profundidad */
+}
+
+.columna h3 {
+    font-size: 24px; 
+    /* Titulo de las columnas en 24 píxeles */
+    color: #f5f5f5; 
+    /* Titulos en blanco para mayor contraste */
+    margin-bottom: 15px; 
+    /* Separa el titulo del contenido de la columna */
+}
+
+#introduccion img {
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4); 
+    /* Sombra más pronunciada en las imágenes */
+    height: auto; 
+    /*altura automatica*/
+    margin-top: 10px;
+    /*margen de la parte superior de las imagenes*/
+    border-radius: 0px;
+    transition: transform 0.3s ease; 
+    /* Transicion al pasar el mouse */
+}
+
+#introduccion img:hover {
+    transform: scale(1.05); 
+    /* Efecto de agrandamiento de las imagenes */
+}
+
+@media (max-width: 768px) {
+    #introduccion img {
+        width: 100%; 
+        /* Las imagenes ocupan todo el ancho de la pantalla */
+        max-width: 100%; 
+    }
+
+    .columnas {
+        flex-direction: column; 
+        /* Cambia las columnas a una direccion vertical en pantallas pequeñas */
+        gap: 20px; 
+    }
+}
+table {
+    width: 80%; 
+    /* Hace que la tabla ocupe el 100% del ancho del contenedor */
+    margin: 0 auto;
+    border-collapse: collapse; 
+    /* Hace que los bordes de las celdas se combinen */
+}
+
+table, th, td {
+    border: 3px solid #444; 
+    /* Borde gris oscuro de 1px para la tabla y sus celdas */
+}
+
+th, td {
+    padding: 12px; 
+    /* Espaciado dentro de las celdas */
+    text-align: center; 
+    /* Alineación del texto */
+}
